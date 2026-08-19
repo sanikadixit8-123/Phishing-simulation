@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Awareness Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Phishing Awareness Quiz</h2>
+    
+    <!-- Email Simulation Card -->
+    <div id="email-card" class="email-card">
+      <p><strong>From:</strong> <span id="sender"></span></p>
+      <p><strong>Subject:</strong> <span id="subject"></span></p>
+      <hr>
+      <p id="body-text"></p>
+      <button id="action-btn" class="action-btn">Verify Account</button>
+    </div>
+
+    <!-- Link Preview Bar (Simulates Browser Hover) -->
+    <div class="url-preview">
+      Hover Link Destination: <span id="hover-url"></span>
+    </div>
+
+    <!-- Decision Buttons -->
+    <div class="options">
+      <button class="btn phishing" onclick="checkAnswer(true)">Phishing</button>
+      <button class="btn legit" onclick="checkAnswer(false)">Legitimate</button>
+    </div>
+
+    <!-- Feedback Section -->
+    <div id="feedback" class="feedback"></div>
+    <button id="next-btn" class="next-btn" onclick="nextQuestion()" style="display: none;">Next Scenario</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
