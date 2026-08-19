@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.email-card {
+  border: 1px solid #dadce0;
+  padding: 16px;
+  border-radius: 6px;
+  background: #fdfdfd;
+  margin-bottom: 12px;
+}
+
+.action-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.url-preview {
+  background: #202124;
+  color: #8ab4f8;
+  padding: 8px 12px;
+  font-family: monospace;
+  font-size: 13px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.phishing { background-color: #d93025; color: white; }
+.legit { background-color: #1e8e3e; color: white; }
+
+.feedback {
+  font-weight: bold;
+  margin-top: 12px;
+  line-height: 1.4;
+}
